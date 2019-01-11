@@ -15,6 +15,8 @@ class CreateXUserSchedule extends Migration
     {
         Schema::create('x_user_schedule', function (Blueprint $table) {
             $table->increments('id');
+            $table->integer('m_user_id');
+            $table->integer('m_schedule_id');
             $table->timestamps();
         });
     }
