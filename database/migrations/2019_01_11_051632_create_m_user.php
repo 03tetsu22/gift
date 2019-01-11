@@ -19,6 +19,7 @@ class CreateMUser extends Migration
             $table->string('pen_name', 100)->nullable();
             $table->string('account', 100);
             $table->string('password');
+            $table->rememberToken();
             $table->integer('grade')->nullable();
             $table->string('undergraduate', 50)->nullable();
             $table->string('department', 50)->nullable();
